@@ -662,7 +662,7 @@ var testCombinations = [{
     "ignoreSubdomain": false,
     "ignorePath": false,
     "ignorePort": true,
-    "expected": "http://subdomain.example.com:8080"
+    "expected": "http://subdomain.example.com"
 }, {
     "url": "http://subdomain.example.com:8080",
     "ignoreProtocol": false,
@@ -1355,13 +1355,7 @@ describe('Testing url parser', function () {
                 var result = processURL(url.url, url.ignoreProtocol, url.ignoreSubdomain, url.ignorePath, url.ignorePort);
                 var parser = document.createElement('a');
                 parser.href = url.url;
-                try {
-                    console.log('url: ' + url.url)
-                    expect(result).toEqual(url.expected)
-                } catch (e) {
-                    console.log(url);
-                    throw e
-                }
+                expect(result).toEqual(url.expected)
             });
         }(url));
 
