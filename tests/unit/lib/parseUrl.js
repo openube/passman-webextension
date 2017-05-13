@@ -1264,7 +1264,7 @@ var testCombinations = [{
     "ignoreSubdomain": false,
     "ignorePath": true,
     "ignorePort": true,
-    "expected": "example.com"
+    "expected": "subdomain.example.com"
 }, {
     "url": "https://subdomain.example.com/page/login",
     "ignoreProtocol": true,

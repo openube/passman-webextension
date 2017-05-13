@@ -53,7 +53,7 @@ function processURL(URL, ignoreProtocol, ignoreSubdomain, ignorePath, ignorePort
     }
     var returnURL = "";
     if (!ignoreProtocol) {
-        returnURL += protocol + "://";
+        returnURL += protocol + "//";
     }
     if (!ignoreSubdomain) {
         returnURL += host;
