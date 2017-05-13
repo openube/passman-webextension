@@ -1348,7 +1348,8 @@ describe('Testing url parser', function () {
     for (var i = 0; i < testCombinations.length; i++) {
         var url = testCombinations[i];
         (function (url) {
-            var props = 'url: ' + url.url + ' ignoreProtocol: ' + url.ignoreProtocol + ' ignoreSubdomain:' + url.ignoreSubdomain + ' ignorePath: ' + url.ignorePath + ' ignorePort:' + url.ignorePort
+            console.log('url: ' + url.url)
+            var props = 'ignoreProtocol: ' + url.ignoreProtocol + ' ignoreSubdomain:' + url.ignoreSubdomain + ' ignorePath: ' + url.ignorePath + ' ignorePort:' + url.ignorePort
 
             it(props, function () {
                 var result = processURL(url.url, url.ignoreProtocol, url.ignoreSubdomain, url.ignorePath, url.ignorePort);
