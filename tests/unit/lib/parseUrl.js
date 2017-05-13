@@ -1348,7 +1348,7 @@ describe('Testing url parser', function () {
     for (var i = 0; i < testCombinations.length; i++) {
         var url = testCombinations[i];
         (function (url) {
-            console.log('url: ' + url.url)
+
             var props = 'ignoreProtocol: ' + url.ignoreProtocol + ' ignoreSubdomain:' + url.ignoreSubdomain + ' ignorePath: ' + url.ignorePath + ' ignorePort:' + url.ignorePort
 
             it(props, function () {
@@ -1357,6 +1357,7 @@ describe('Testing url parser', function () {
                 parser.href = url.url;
                 try {
                     expect(result).toEqual(url.expected)
+                    console.log('url: ' + url.url)
                 } catch (e) {
                     console.log(url);
                     throw e
