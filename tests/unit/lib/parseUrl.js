@@ -1356,8 +1356,8 @@ describe('Testing url parser', function () {
                 var parser = document.createElement('a');
                 parser.href = url.url;
                 try {
-                    expect(result).toEqual(url.expected)
                     console.log('url: ' + url.url)
+                    expect(result).toEqual(url.expected)
                 } catch (e) {
                     console.log(url);
                     throw e
