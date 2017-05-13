@@ -60,7 +60,7 @@ var testCombinations = [{
     "ignoreSubdomain": true,
     "ignorePath": true,
     "ignorePort": true,
-    "expected": "http//example.com"
+    "expected": "http://example.com"
 }, {
     "url": "http://example.com",
     "ignoreProtocol": false,
@@ -74,7 +74,7 @@ var testCombinations = [{
     "ignoreSubdomain": true,
     "ignorePath": false,
     "ignorePort": true,
-    "expected": "http//example.com"
+    "expected": "http://example.com"
 }, {
     "url": "http://example.com",
     "ignoreProtocol": false,
@@ -88,7 +88,7 @@ var testCombinations = [{
     "ignoreSubdomain": false,
     "ignorePath": true,
     "ignorePort": true,
-    "expected": "http//example.com"
+    "expected": "http://example.com"
 }, {
     "url": "http://example.com",
     "ignoreProtocol": false,
@@ -102,7 +102,7 @@ var testCombinations = [{
     "ignoreSubdomain": false,
     "ignorePath": false,
     "ignorePort": true,
-    "expected": "http//example.com"
+    "expected": "http://example.com"
 }, {
     "url": "http://example.com",
     "ignoreProtocol": false,
@@ -508,7 +508,7 @@ var testCombinations = [{
     "ignoreSubdomain": true,
     "ignorePath": true,
     "ignorePort": true,
-    "expected": "http//example.com"
+    "expected": "http://example.com"
 }, {
     "url": "http://subdomain.example.com",
     "ignoreProtocol": false,
@@ -522,7 +522,7 @@ var testCombinations = [{
     "ignoreSubdomain": true,
     "ignorePath": false,
     "ignorePort": true,
-    "expected": "http//example.com"
+    "expected": "http://example.com"
 }, {
     "url": "http://subdomain.example.com",
     "ignoreProtocol": false,
@@ -956,7 +956,7 @@ var testCombinations = [{
     "ignoreSubdomain": true,
     "ignorePath": true,
     "ignorePort": true,
-    "expected": "http//example.com"
+    "expected": "http://example.com"
 }, {
     "url": "http://subdomain.example.com/page/login",
     "ignoreProtocol": false,
@@ -970,7 +970,7 @@ var testCombinations = [{
     "ignoreSubdomain": true,
     "ignorePath": false,
     "ignorePort": true,
-    "expected": "http//example.com/page/login"
+    "expected": "http://example.com/page/login"
 }, {
     "url": "http://subdomain.example.com/page/login",
     "ignoreProtocol": false,
